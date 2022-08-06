@@ -99,6 +99,7 @@ nav ul li a:hover {
 
 #phoneNav {
   display: none;
+  overflow-x: hidden;
 }
 
 button {
@@ -486,7 +487,7 @@ button:hover {
     }
     #phoneNav ul  {
       margin-top: 10vh;
-      width: 100%;
+      width: 100vw;
     }   
     #phoneNav ul li {
       list-style-type: none;
