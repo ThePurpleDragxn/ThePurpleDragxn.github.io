@@ -1,0 +1,520 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #D9D9D9;
+    font-size: 0.8vw;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    width: fit-content;
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+nav ul li {
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5vw;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000000000;
+    padding: 1vw;
+    margin-top: 0.5vh;
+}
+
+#ham {
+    display: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #7349B8;
+    font-size: 1vw;
+    position: absolute;
+    border-bottom: 1px solid #7349B8;
+    padding: 0.25vw;
+}
+
+
+nav ul li a:active {
+  border-bottom: none;
+}
+
+nav p {
+    color: #7349B8;
+    font-weight: 550;
+    font-size: 1.19vw;
+    display: flex;
+    align-items: center;
+    margin-right: 0vw;
+    margin-left: 5vw;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid rgb(68, 42, 110);
+}
+
+#moon {
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    margin-right: 5vw;
+}
+
+#moon:hover {
+    color: rgb(125, 125, 125);
+}
+
+#welcome {
+    color:#7349B8;
+    font-size: 4vw;
+    font-weight: 700;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.250));
+    margin-left: 17vw;
+    margin-top: 8vh;
+    animation-name: welcomeslide;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+#phoneNav {
+  display: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+button:hover {
+  color: #4f4f4f;
+}
+
+#top {
+    margin-top: 30vh;
+    display: flex;
+}
+
+@keyframes cardvis {
+  from {
+    opacity: 0;
+    margin-left: 60vw;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#card {
+    margin-left: 27vw;
+    margin-top: -8.5vh;
+    right: 10vw;
+    animation-name: cardvis;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+#textcard {
+    width: 25vw;
+    height: 40vh;
+    background-color: #7349B8;
+}
+
+#textcard {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5vw;
+    color: #D9D9D9;
+    z-index: 111;
+}
+
+#textcard p {
+    padding: 2vw;
+}
+
+#cardshadow {
+    background-color: #3C295C;
+    width: 25vw;
+    height: 40vh;
+    margin-left: 5vw;
+    margin-bottom: -45vh;
+    margin-top: 10vh;
+}
+
+#center {
+    width: 100%;
+    height: 75vh;
+    background-color: #CECECE;
+    margin-top: 35vh;
+}
+
+.carousel {
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+  }
+  
+  .carousel ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+  }
+  
+  .slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #656565;
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    font-weight: 700;
+  }
+  
+  .carousel-button:hover,
+  .carousel-button:focus {
+    color: rgb(65, 65, 65);
+  }
+  
+  
+  .carousel-button.prev {
+    left: 1rem;
+    margin-left: 5vw;
+  }
+  
+  .carousel-button.next {
+    right: 1rem;
+    border: none;
+    margin-right: 5vw;
+  }
+
+  .items {
+    display: flex;
+    margin-top: 18vh;
+  }
+
+  .item {
+    margin-left: 16vw;
+  }
+
+  .box {
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.250));
+    height: 35vh;
+    width: 25vw;
+  }
+
+  .box a {
+    text-decoration: none;
+    color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 1vh;
+    margin-top: -1vh;
+  }
+
+  .abox {
+    background-color: #3C295C;
+    padding: 1em;
+    width: 23.4vw;
+    height: 2vh;
+  }
+
+  .abox:hover {
+    background-color: #2d1f45;
+  }
+
+  #footer {
+    padding: 0;
+    background-color: #B0B0B0;
+    height: 30vh;
+    width: 100%;
+    margin-top: -2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer a {
+    margin-left: 10vw;
+}
+
+#footer p {
+    color: #656565;
+}
+  #footer h1 {
+    color: #3C3C3C;
+}
+
+@media only screen and (max-width: 1400px) {
+    nav p {
+      font-size: 1.75vw;
+    }
+    nav ul li a {
+      font-size: 1.75vw;
+    }
+    #nav {
+      padding: 1vw;
+    }
+    nav {
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  #moon {
+
+  }
+  #textcard p{
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  #moon {
+    margin-left: 15vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  nav p {
+    font-size: 2.5vw;
+    margin-top: 1vh;
+  }
+  nav ul li a {
+    font-size: 2vw;
+    margin-top: 1vh;
+  }
+  nav ul {
+    margin-left: 24vw;
+    margin-right: 15vw;
+  }
+  #textcard p{
+    font-size: 2.5vw;
+  }
+  #welcome {
+    font-size: 6vw;
+    margin: 0;
+    margin-left: 34vw;
+  }
+  #top {
+    display: flex;
+    flex-direction: column;
+  }
+  #card {
+    animation: 0;
+    margin: 0;
+    margin-left: 55vw;
+  }
+  #textcard {
+    width: 30vw;
+  }
+  #cardshadow {
+    width: 30vw;
+  }
+  nav {
+    background-color: #d0cece;
+    margin-top: 0vh;
+  }
+  #card {
+    animation-name: cardvis;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #textcard {
+    width: 40vw;
+  }
+  #cardshadow {
+    width: 40vw;
+  }
+  #textcard p{
+    font-size: 3.5vw;
+  }
+  nav ul li a {
+    font-size: 2.5vw;
+    margin-left: 1vw;
+  }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+      display: none;
+    }
+
+    #moon {
+      display: none;
+    }
+    nav {
+      border: none;
+      background-color: transparent;
+    }
+    nav p {
+      font-size: 5vw;
+      margin-left: 3vw;
+      margin-right: 4vw;
+    }
+    #welcome {
+      font-size: 10vw;
+      margin-left: 27vw;
+      margin-top: -5vh;  
+    }
+    #card {
+      margin-top: 20vw;
+    }
+    #textcard {
+      width: 50vw;
+      height: 30vh;
+    }
+    #cardshadow {
+      width: 50vw;
+      height: 30vh;
+      margin-bottom: -35vh;
+    }
+    #textcard p{
+      font-size: 4.5vw;
+      width: 40vw;
+      height: 20vh;
+      margin-top: 2vh;
+    }
+    #ham {
+      display: flex;
+      margin-top: 1vh;
+      margin-left: 18vw;
+    }
+    nav {
+      margin-top: 1vh;
+      margin-left: 20vw;
+    }
+    nav ul li {
+      margin-right: 10vw;
+    }
+    
+    #phoneR {
+      display: none;
+    }
+
+    .item {
+      margin-left: 26vw;
+    }
+    
+    .box {
+      width: 50vw;
+    }
+    .abox {
+      width: 48.5vw;
+      height: 5vh;
+    }
+    .abox a {
+      font-size: 3vw;
+      height: 5vh;
+      margin-top: 0.3vh;
+    }
+    #card {
+      animation-name: cardvis;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+    }
+    #footer div h1 {
+      font-size: 5vw;
+    }
+    #footer div p {
+      font-size: 3vw;
+    }
+    #footer a img{
+      width: 10vw;
+    }
+    #phoneNav {
+        margin-top: -2vh;
+        background-color: #CECECE;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+    #phoneNav ul  {
+      margin-top: 10vh;
+      width: 100%;
+    }   
+    #phoneNav ul li {
+      list-style-type: none;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      background-color: #c2c2c2;
+  }
+     #phoneNav ul li a {
+      font-size: 5vw;
+      text-decoration: none;
+      color: #7349B8;
+      width: 100%;
+      padding: 0.5vw;
+      border: 1px solid #3C3C3C;
+      border-top: none;
+      padding: 2vw;
+    }
+    #ham {
+      z-index: 12392183123213721987321371;
+    }
+
+  
+}
+
+
+
+
+
+
