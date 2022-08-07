@@ -99,7 +99,8 @@ border-bottom: 2px solid rgb(68, 42, 110);
 }
 
 #phoneNav {
-display: none;
+  display: none;
+  overflow-x: hidden;
 }
 
 button {
@@ -306,6 +307,9 @@ to {
   }
   nav {
   }
+  #phoneNav {
+    display: none;
+    }
   
 }
 
@@ -319,6 +323,9 @@ to {
 .abox a {
   font-size: 1.5vw;
 }
+#phoneNav {
+  display: none;
+  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -381,6 +388,9 @@ nav {
 .abox a {
   font-size: 2vw;
 }
+#phoneNav {
+  display: none;
+  }
 
 }
 
@@ -417,7 +427,9 @@ nav ul li a {
   height: 5vh;
   margin-top: 0.3vh;
 }
-
+#phoneNav {
+  display: none;
+  }
 }
 
 
@@ -520,7 +532,7 @@ nav ul li a {
   }
   #phoneNav ul  {
     margin-top: 10vh;
-    width: 100vw;
+    width: 100%;
   }   
   #phoneNav ul li {
     list-style-type: none;
