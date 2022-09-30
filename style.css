@@ -305,15 +305,12 @@ button:hover {
     #nav {
       padding: 1vw;
     }
-    nav {
-    }
+   
 
 }
 
 @media only screen and (max-width: 1200px) {
-  #moon {
 
-  }
   #textcard p{
     font-size: 2vw;
   }
