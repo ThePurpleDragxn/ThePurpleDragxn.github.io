@@ -484,7 +484,7 @@ button:hover {
         background-color: #CECECE;
         position: fixed;
         top: 0;
-        width: 100%;
+        width: 100vw;
         z-index: 2;
     }
     #phoneNav ul  {
@@ -493,7 +493,7 @@ button:hover {
     }   
     #phoneNav ul li {
       list-style-type: none;
-      width: 100%;
+      width: 100vw;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -503,7 +503,7 @@ button:hover {
       font-size: 5vw;
       text-decoration: none;
       color: #7349B8;
-      width: 100%;
+      width: 100vw;
       padding: 0.5vw;
       border: 1px solid #3C3C3C;
       border-top: none;

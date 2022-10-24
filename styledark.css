@@ -526,11 +526,11 @@ nav ul li a {
       position: fixed;
       top: 0;
       z-index: 2;
-      width: 100%;
+      width: 100vw;
   }
   #phoneNav ul  {
     margin-top: 10vh;
-    width: 100%;
+    width: 100vw;
   }   
   #phoneNav ul li {
     list-style-type: none;
@@ -538,7 +538,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     background-color: #1D1D1D;
-    width: 100%;
+    width: 100vw;
 }
    #phoneNav ul li a {
     font-size: 5vw;
@@ -548,7 +548,7 @@ nav ul li a {
     border: 1px solid #3C3C3C;
     border-top: none;
     padding: 2vw;
-    width: 100%;
+    width: 100vw;
   }
   #ham {
     z-index: 12392183123213721987321371;
