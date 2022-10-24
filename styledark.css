@@ -431,7 +431,6 @@ nav ul li a {
 @media only screen and (max-width: 600px) {
   body {
     width: 100vw;
-    touch-action: pan-y;
   }
   nav ul {
     display: none;
@@ -554,7 +553,9 @@ nav ul li a {
   #ham {
     z-index: 12392183123213721987321371;
   }
-
+  #center {
+    display: none;
+  }
 
 }
 

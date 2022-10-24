@@ -5,7 +5,8 @@
     
 }
 body {
-    background-color: #D9D9D9;
+ /* background-color: #D9D9D9; */
+  background-color: red;
     font-size: 0.8vw;
     font-family: sans-serif;
     overflow-x: hidden;
@@ -392,7 +393,6 @@ button:hover {
     body {
       width: 100vw;
       overflow-x: hidden;
-      touch-action: pan-y;
     }
     nav ul {
       display: none;
@@ -514,7 +514,10 @@ button:hover {
     #ham {
       z-index: 12392183123213721987321371;
     }
-
+    #center {
+      display: none;
+    }
+  
   
 }
 
