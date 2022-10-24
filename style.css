@@ -6,7 +6,7 @@
 }
 body {
  /* background-color: #D9D9D9; */
-  background-color: lime;
+  background-color: blue;
     font-size: 0.8vw;
     font-family: sans-serif;
     overflow-x: hidden;
@@ -419,7 +419,7 @@ button:hover {
       margin-top: 20vw;
     }
     #textcard {
-      width: 50vw;
+      width: 40vw;
       height: 30vh;
       margin-right: 0;
     }
