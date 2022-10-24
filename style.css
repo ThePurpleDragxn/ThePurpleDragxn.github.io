@@ -392,7 +392,7 @@ button:hover {
     body {
       width: 100vw;
       overflow-x: hidden;
-      touch-action: cross-slide-y;
+      touch-action: pan-y;
     }
     nav ul {
       display: none;
