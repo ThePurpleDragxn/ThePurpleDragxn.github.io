@@ -429,6 +429,9 @@ nav ul li a {
 
 
 @media only screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+  }
   nav ul {
     display: none;
   }
