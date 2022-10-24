@@ -391,6 +391,8 @@ button:hover {
 @media only screen and (max-width: 600px) {
     body {
       width: 100vw;
+      overflow-x: hidden;
+      touch-action: none;
     }
     nav ul {
       display: none;
