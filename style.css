@@ -12,6 +12,10 @@ body {
     width: 100%;
 }
 
+#center1 {
+  display: none;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -164,7 +168,7 @@ button:hover {
     margin-top: 10vh;
 }
 
-#center {
+#center, #center1 {
     width: 100%;
     height: 75vh;
     background-color: #CECECE;
@@ -515,11 +519,18 @@ button:hover {
     #ham {
       z-index: 12392183123213721987321371;
     }
-    
-    #b,#c,#d,#e,#f {
+    #center {
       display: none;
     }
-  
+    #center1 {
+      display: flex;
+    }
+    #center1 {
+      width: 100%;
+      height: 75vh;
+      background-color: #CECECE;
+      margin-top: 35vh;
+  }
 }
 
 
