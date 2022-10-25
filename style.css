@@ -515,8 +515,10 @@ button:hover {
     #ham {
       z-index: 12392183123213721987321371;
     }
-
-  
+    
+    #b,#c,#d,#e,#f {
+      display: none;
+    }
   
 }
 
