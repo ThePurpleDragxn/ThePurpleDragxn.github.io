@@ -11,6 +11,10 @@ body {
   width: 100vw;
 }
 
+#center1 {
+  display: none;
+}
+
 nav ul {
   list-style-type: none;
   display: flex;
